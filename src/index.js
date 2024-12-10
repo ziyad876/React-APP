@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,8 +8,17 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+let done = 0;
+document.addEventListener("scroll", () => {
+  if (done === 0) {
+    const aboutPage = document.querySelector(".AboutPage");
+    const movingImage = document.querySelector(".moving-image");
+    if(aboutPage && movingImage){
+    const aboutPageTop = aboutPage.getBoundingClientRect().top;
+    if (aboutPageTop < window.innerHeight && aboutPageTop > 0) {
+      movingImage.classList.add("visible");
+      done = 1;
+    }
+  }
+  }
+});
