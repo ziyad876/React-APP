@@ -1,0 +1,171 @@
+.RenderLogo{
+    width: 120px;
+    height: 120px;
+    margin-left: 50%;
+    margin-top: 300px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+.App{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.Logo{
+    width: 120px;
+    height: 120px;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+.blinking {
+    animation: blink 1s infinite;
+}
+.HomePage{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(68, 116, 157);
+    background-image: url(asssets/image.png);
+    background-size: 100%; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+.AboutPage{
+    display: block;
+    height: 768px;
+    background-color: rgb(68, 116, 157);
+}
+.moving-image {
+    position: relative;
+    opacity: 0;
+}
+
+@keyframes slide-in{
+    0% { opacity: 0 }
+    0% { left: -10%; }
+    100% { opacity: 1; }
+    100% { left: 10%; }
+}
+
+
+.moving-logo{
+    width: 80%;
+}
+.AboutPage div{
+    display: inline-block;
+}
+.AboutTwo{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.AboutTwo h3{
+    transform: translateX(10%);
+    font-size: xx-large;
+    font-family: 'Bodoni72';
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+.AboutTwo p{
+    transform: translateX(10%);
+}
+.visible {
+    animation: slide-in 5s forwards;
+}
+.ContactPage{
+    display: block;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.insprasion{
+    display: inline-block;
+}
+.insprasion h1{
+    font-family: 'Bodoni72';
+    color: rgb(68, 116, 157);
+    font-size: 45px;
+    margin-top: 20px;
+    line-height: 50px;
+    font-weight: 500;
+    gap: 10px;
+    text-transform: uppercase;
+}
+.ImgSlide img, svg{
+    width: 100%;
+    height: 100%;
+}
+.Forms{
+    padding-top: 100px;
+    gap: 30px;
+    padding-bottom: 200px;
+    background: linear-gradient(#246a8b,#1988d6);
+}
+.Forms input{
+    transform: translateX(20%);
+    width: 75%;
+    height: 50px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding-left: 20px;
+}
+.Forms textarea{
+    transform: translateX(20%);
+    width: 75%;
+    height: 200px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.Forms button{
+    transform: translateX(20%);
+    border-radius: 10px;
+    width: 75%;
+    height: 50px;
+}
+.Forms input::placeholder{
+    margin-left: 20px;
+    color: rgba(79, 79, 79, 0.3);
+}
+.Forms textarea::placeholder{
+    margin-left: 20px;
+    color: rgba(79, 79, 79, 0.3);
+}
+.Forms button:hover{
+    background: linear-gradient(#020202, #332037);
+    color: white;
+}
+.Forms input:focus{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-color: #ff7f50;
+    background-color: rgb(129, 125, 125);
+    color: rgb(0, 0, 0);
+}
+.Forms textarea:focus{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-color: #ff7f50;
+    background-color: rgb(129, 125, 125);
+    color: rgb(0, 0, 0);
+}
+@media (max-width:574px){
+    .HomePage{
+        background-image: url(asssets/1024\ x\ 768\ \ -\ Copy.png);
+    }
+    .insprasion h1{
+        font-size: 30px;
+    }
+}
