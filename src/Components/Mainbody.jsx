@@ -3,7 +3,6 @@ import Navbar from "./Topbar";
 import Slide from "./SlideImage";
 import Form from "./form";
 import Footer from "./Footer";
-import img from '.../public/asssets/img.png';
 
 function MainBody(){
 
@@ -14,13 +13,13 @@ function MainBody(){
 
 
     return <div>
-        {isBlick ? <img className="blinking RenderLogo" src={img} alt="Real Estate Logo" /> : <div>
+        {isBlick ? <img className="blinking RenderLogo" src="./asssets/img.png" alt="Real Estate Logo" /> : <div>
             <Navbar/>
             <div id="home" className="HomePage col-lg-12 col-12 col-md-12 col-sm-12">
             </div>
             <div id="about" className="AboutPage col-lg-12 col-12 col-md-12 col-sm-12">
                 <div className="col-lg-6 col-12 col-md-5 col-sm-12">
-                    <img alt="" src="https://www.google.com/imgres?q=image%20building&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F302769%2Fpexels-photo-302769.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-pixabay-302769.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fbuilding%2F&docid=Y4TD8shtRwMuGM&tbnid=6dma5g5LqovW_M&vet=12ahUKEwjh_Yzh_Z6KAxWfSmwGHVkeKVYQM3oECBoQAA..i&w=2200&h=1467&hcb=2&itg=1&ved=2ahUKEwjh_Yzh_Z6KAxWfSmwGHVkeKVYQM3oECBoQAA"  className= "moving-logo col-lg-12 col-12 col-md-12 col-sm-12 moving-image"/>
+                    <img alt="" src="./asssets/realestate.jpeg"  className= "moving-logo col-lg-12 col-12 col-md-12 col-sm-12 moving-image"/>
                 </div>
                 <div className="AboutTwo col-lg-6 col-12 col-md-6 col-sm-12">
                     <h3>The calm waters<br/> beckon you to<br/>  discover luxury living <br/> in Chennai</h3>
