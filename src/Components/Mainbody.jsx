@@ -19,7 +19,7 @@ function MainBody(){
             </div>
             <div id="about" className="AboutPage col-lg-12 col-12 col-md-12 col-sm-12">
                 <div className="col-lg-6 col-12 col-md-5 col-sm-12">
-                    <img alt="" src="/asssets/realestate.jpeg"  className= "moving-logo col-lg-12 col-12 col-md-12 col-sm-12 moving-image"/>
+                    <img alt="" src="https://ziyad876.github.io/React-APP/asssets/realestate.jpeg"  className= "moving-logo col-lg-12 col-12 col-md-12 col-sm-12 moving-image"/>
                 </div>
                 <div className="AboutTwo col-lg-6 col-12 col-md-6 col-sm-12">
                     <h3>The calm waters<br/> beckon you to<br/>  discover luxury living <br/> in Chennai</h3>
