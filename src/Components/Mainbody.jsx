@@ -13,7 +13,7 @@ function MainBody(){
 
 
     return <div>
-        {isBlick ? <img className="blinking RenderLogo" srcSet="https://ziyad876.github.io/React-APP/asssets/img.png" alt="Real Estate Logo" /> : <div>
+        {isBlick ? <img className="blinking RenderLogo" srcSet="asssets/img.png" alt="Real Estate Logo" /> : <div>
             <Navbar/>
             <div id="home" className="HomePage col-lg-12 col-12 col-md-12 col-sm-12">
             </div>
