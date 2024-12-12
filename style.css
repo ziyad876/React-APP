@@ -168,4 +168,17 @@ p, h1, h2, h3, h4, h5, h6{
     .insprasion h1{
         font-size: 30px;
     }
+    .AboutTwo h3{
+        transform: translateX(0%);
+        margin-left: 30px;
+        font-size: x-large;
+        font-family: 'Bodoni72';
+        text-transform: uppercase;
+        margin-top: 100px;
+    }
+    .AboutTwo p{
+        transform: translateX(0%);
+        font-size: small;
+        margin-left: 30px;
+    }
 }
